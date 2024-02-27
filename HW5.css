@@ -1,5 +1,8 @@
 body{
-    background: #1d2630;
+    background: linear-gradient(292deg,#22abd3,#7114cb);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
 }
 
 *{
