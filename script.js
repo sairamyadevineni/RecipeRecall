@@ -105,7 +105,7 @@ function updateData(index){
     document.getElementById("step4").value = recipeList[index].step4;
     document.getElementById("imageUrl").value = recipeList[index].imageUrl;
 
-    document.querySelector("Edit").onclick = function(){
+    document.getElementById("Edit").onclick = function(){
         recipeList[index].name = document.getElementById("name").value;
         recipeList[index].description = document.getElementById("description").value;
         recipeList[index].step1 = document.getElementById("step1").value;
