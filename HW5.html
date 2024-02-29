@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class = "container">
-        <h2 class="mt-5 mb-5">Make your own recipe !</h2>
+        <h2 class="mt-5 mb-5" style="text-align: center;">Recipe Recall : Make your own recipe !</h2>
         <div class="mb-5">
            <div class="row">
             <div class="form group mb-3">
@@ -22,7 +22,21 @@
                     class="form-control" 
                     id="name" 
                     placeholder="Enter Name"
+                    maxlength="125"
+                    minlength="1"
+                    required
                 />
+            </div>
+            <div class="form-group mb-3">
+                <label for="description">Description:</label>
+                <textarea 
+                    name="description" 
+                    class="form-control" 
+                    id="description" 
+                    placeholder="Enter Description"
+                    maxlength="255"
+                    required
+                ></textarea>
             </div>
             <div class="form group mb-3">
                 <label for="step1">Step 1</label>
@@ -65,6 +79,16 @@
                     placeholder="Next step"
                 />
             </div>
+            <div class="form-group mb-3">
+                <label for="imageUrl">Image URL:</label>
+                <input 
+                    type="url" 
+                    name="imageUrl" 
+                    class="form-control" 
+                    id="imageUrl" 
+                    placeholder="Enter Image URL"
+                />
+            </div>
             <div class="col-lg-12 mt-5">
             <button class="btn btn-success" 
                 id="Submit" 
@@ -84,7 +108,9 @@
                     <thead class="thead-dark">
                         <tr>
                             <th>Name of the recipe</th>
+                            <th>Description</th>
                             <th > Instructions </th>
+                            <th> Reference Image</th>
                             <th> Actions</th>
                         </tr>
                     </thead>
